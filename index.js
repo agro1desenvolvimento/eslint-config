@@ -5,8 +5,12 @@ module.exports = {
   },
   extends: [
     'airbnb',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:jest/recommended',
+    'plugin:jest/style',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -17,7 +21,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [
-    'react',
+    'jest',
     '@typescript-eslint',
   ],
   rules: {
