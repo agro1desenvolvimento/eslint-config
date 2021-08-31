@@ -8,7 +8,7 @@
   },
   "author": "Agro1Desenvolvimento",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "eslint": ">= 7",
     "eslint-config-airbnb": ">= 18.2.1",
     "eslint-config-standard": ">= 16.0.1",
