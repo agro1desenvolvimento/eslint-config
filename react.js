@@ -4,7 +4,7 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'airbnb',
+    '@agro1desenvolvimento/eslint-config',
     'plugin:react/recommended',
     'plugin:react/recommended',
   ],

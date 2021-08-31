@@ -14,17 +14,6 @@ jobs:
           node-version: 14
           registry-url: https://npm.pkg.github.com/
 
-      - name: Cache node_modules
-        id: cache-modules
-        uses: actions/cache@v1
-        with:
-          path: node_modules
-          key: ${{ runner.OS }}-build-${{ hashFiles('yarn.lock') }}   
-
-      - name: Install Node.js dependencies
-        if: steps.cache-modules.outputs.cache-hit != 'true'
-        run: yarn install
-
       - run: yarn publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
