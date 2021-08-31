@@ -4,21 +4,16 @@ module.exports = {
     '@react-native-community',
   ],
   rules: {
-    'react/jsx-one-expression-per-line': 'off',
-    'react/jsx-props-no-spreading': 'off',
-    'react/jsx-filename-extension': ['error', { extensions: ['.tsx', '.ts'] }],
-    'react/prop-types': 'off',
-    'react/button-has-type': 'off',
-    'react/jsx-uses-react': 'off',
-    'react/react-in-jsx-scope': 'off',
-    'react/forbid-prop-types': 'off',
-    'react/jsx-curly-brace-presence': ['error', 'never'],
-    'react/jsx-boolean-value': ['error', 'never'],
-    'react-hooks/exhaustive-deps': 'off',
-
-    'jsx-a11y/mouse-events-have-key-events': 'off',
-    'jsx-a11y/label-has-associated-control': 'off',
-    'jsx-a11y/click-events-have-key-events': 'off',
-    'jsx-a11y/control-has-associated-label': 'off',
+    'no-underscore-dangle': 'off',
+    'no-restricted-imports': [
+      'error',
+      {
+        patterns: ['react-native-elements', 'react-test-renderer'],
+      },
+    ],
+  },
+  settings: {
+    // https://github.com/facebook/react-native/issues/28549#issuecomment-657249702
+    'import/ignore': ['node_modules/react-native/index\\.js$'],
   },
 };

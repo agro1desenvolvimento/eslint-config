@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "description": "A ESLINT configuration repository for the Agro1Desenvolvimento projects",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Agro1Desenvolvimento",
   "license": "MIT",
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": ">= 4.7.0",
+    "@typescript-eslint/parser": ">= 4.7.0",
+    "@react-native-community/eslint-config": ">= 2.0.0",
     "eslint": ">= 7",
     "eslint-config-airbnb": ">= 18.2.1",
     "eslint-config-standard": ">= 16.0.1",

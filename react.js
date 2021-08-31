@@ -1,8 +1,6 @@
 module.exports = {
   extends: [
     '@agro1desenvolvimento/eslint-config',
-    'plugin:react/recommended',
-    'plugin:react/recommended',
   ],
   plugins: [
     'react',
