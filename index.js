@@ -1,8 +1,4 @@
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-  },
   extends: [
     'airbnb',
     'plugin:import/recommended',
@@ -12,45 +8,50 @@ module.exports = {
     'plugin:jest/recommended',
     'plugin:jest/style',
   ],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: 12,
-    sourceType: 'module',
-  },
   plugins: [
     'jest',
     '@typescript-eslint',
   ],
   rules: {
-    'no-undef': 'off',
-    'no-use-before-define': 'off',
-    'consistent-return': 'off',
-    'no-unused-vars': 'off',
-    'no-console': ['error', { allow: ['warn', 'error'] }],
+    'arrow-body-style': ['error', 'as-needed'],
     'class-methods-use-this': 'off',
-    'import/extensions': 'off',
+    'consistent-return': 'off',
+    curly: ['error', 'multi-line'],
+    'no-console': ['error', { allow: ['warn', 'error'] }],
+    'no-dupe-class-members': 'off',
+    'no-duplicate-imports': 'error',
     'no-param-reassign': ['error', { props: false }],
-    'no-shadow': 'off',
     'no-restricted-globals': ['error', 'localStorage'],
-    'import/no-named-as-default-member': 'off',
-    'import/no-cycle': 'error',
-    'import/no-extraneous-dependencies': ['error', {
-      devDependencies: [
-        '__mocks__/**',
-        '__tests__/**',
-        'src/setupTests.ts',
-      ],
-    }],
+    'no-shadow': 'off',
+    'no-throw-literal': 'error',
+    'no-use-before-define': 'off',
+    'no-undef': 'off',
+    'no-unused-vars': 'off',
 
-    '@typescript-eslint/no-explicit-any': 'off',
+    'import/default': 'off',
+    'import/extensions': 'off',
+    'import/no-cycle': 'error',
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: [
+          '__mocks__/**',
+          '__tests__/**',
+          'e2e/**',
+          'src/setupTests.ts',
+        ],
+      },
+    ],
+    'import/no-named-default': 'off',
+    'import/no-named-as-default-member': 'off',
+
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/no-unused-vars': 'error',
-    '@typescript-eslint/no-shadow': 'error',
+    '@typescript-eslint/no-empty-interface': 'error',
+    '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-shadow': 'error',
+    '@typescript-eslint/no-unused-vars': 'error',
   },
   settings: {
     'import/resolver': {

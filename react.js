@@ -1,6 +1,7 @@
 module.exports = {
   extends: [
     '@agro1desenvolvimento/eslint-config',
+    'plugin:react/recommended',
   ],
   plugins: [
     'react',
@@ -17,6 +18,9 @@ module.exports = {
     'react/jsx-curly-brace-presence': ['error', 'never'],
     'react/jsx-boolean-value': ['error', 'never'],
     'react-hooks/exhaustive-deps': 'off',
+    'react/destructuring-assignment': 'off',
+    'react/require-default-props': 'off',
+    'react/no-array-index-key': 'off',
 
     'jsx-a11y/mouse-events-have-key-events': 'off',
     'jsx-a11y/label-has-associated-control': 'off',
