@@ -7,6 +7,7 @@ module.exports = {
     'react',
   ],
   rules: {
+    'react/display-name': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'react/jsx-props-no-spreading': 'off',
     'react/jsx-filename-extension': ['error', { extensions: ['.tsx', '.ts'] }],
