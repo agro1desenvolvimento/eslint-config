@@ -32,6 +32,7 @@ module.exports = {
     'no-use-before-define': 'off',
     'no-undef': 'off',
     'no-unused-vars': 'off',
+    'no-useless-constructor': 'off',
 
     'import/default': 'off',
     'import/extensions': 'off',
@@ -57,6 +58,7 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-shadow': 'error',
     '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-useless-constructor': 'error',
 
     'react/jsx-one-expression-per-line': 'off',
     'react/jsx-props-no-spreading': 'off',
