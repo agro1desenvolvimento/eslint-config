@@ -30,7 +30,7 @@ module.exports = {
 
     'import/default': 'off',
     'import/extensions': 'off',
-    'import/no-cycle': 'error',
+    'import/no-cycle': 'off',
     'import/no-named-default': 'off',
     'import/no-named-as-default-member': 'off',
 
@@ -75,6 +75,15 @@ module.exports = {
       singleQuote: true,
       trailingComma: 'all'
     }],
+    'no-unreachable': 'error',
+
+    'react/function-component-definition': [
+      'error',
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function',
+      },
+    ],
   },
   parser: '@typescript-eslint/parser',
   settings: {

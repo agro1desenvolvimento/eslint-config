@@ -31,7 +31,7 @@ module.exports = {
 
     'import/default': 'off',
     'import/extensions': 'off',
-    'import/no-cycle': 'error',
+    'import/no-cycle': 'off',
     'import/no-extraneous-dependencies': [
       'error',
       {

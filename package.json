@@ -1,6 +1,6 @@
 {
   "name": "@agro1desenvolvimento/eslint-config",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A ESLINT configuration repository for the Agro1Desenvolvimento projects",
   "main": "index.js",
   "author": "Agro1Desenvolvimento",
@@ -25,6 +25,6 @@
     "eslint": ">= 8"
   },
   "engines": {
-    "node": "18"
+    "node": ">= 18"
   }
 }
